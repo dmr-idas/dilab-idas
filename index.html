@@ -261,6 +261,22 @@
             font-size: 1.8rem;
             flex-shrink: 0;
         }
+        .news-photo {
+            width: 260px;
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: var(--bg-subtle);
+        }
+        .news-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .news-card:hover .news-photo img { transform: scale(1.04); }
         .news-content { min-width: 0; }
         .news-meta {
             display: flex;
@@ -629,6 +645,68 @@
             margin-bottom: 1.5rem;
             font-size: 1rem;
         }
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .student-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+        .student-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--accent);
+            z-index: 2;
+        }
+        .student-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+        .student-visual {
+            aspect-ratio: 16 / 9;
+            background: var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+        .student-visual svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .student-info {
+            padding: 1.25rem 1.5rem;
+        }
+        .student-name {
+            font-size: 1.05rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .student-research-label {
+            font-size: 0.7rem;
+            color: var(--accent);
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .student-research-topic {
+            font-size: 0.88rem;
+            color: var(--text);
+            line-height: 1.6;
+        }
         .cv-section {
             margin-top: 3rem;
             padding-top: 2.5rem;
@@ -802,6 +880,7 @@
             .focus-grid { grid-template-columns: 1fr; }
             .impact-grid { grid-template-columns: repeat(2, 1fr); }
             .director-header { grid-template-columns: 1fr; gap: 2.5rem; }
+            .students-grid { grid-template-columns: 1fr; }
             .expertise-grid { grid-template-columns: 1fr; }
             .framework-pillars { grid-template-columns: repeat(2, 1fr); }
         }
@@ -817,6 +896,7 @@
             .framework-foundation { grid-template-columns: 1fr; }
             .news-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.8rem; }
             .news-title { font-size: 1.15rem; }
+            .news-photo { width: 100%; }
         }
         html { scroll-behavior: smooth; }
     </style>
@@ -835,7 +915,7 @@
                 <li><a href="#news">News</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#research">Research</a></li>
-                <li><a href="#director">Director</a></li>
+                <li><a href="#members">Members</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -882,6 +962,63 @@
                             <span>Manuscript Submission Deadline: <strong>30 November 2026</strong></span>
                         </div>
                         <a href="https://www.frontiersin.org/research-topics/79585/the-symbiotic-shift-generative-ai-as-co-creation-catalyst-in-human-creative-dynamics" target="_blank" rel="noopener noreferrer" class="news-cta">View Research Topic</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-photo">
+                        <img src="dongseo_lecture.jpg" alt="Prof. Baek delivering a special lecture at Dongseo University">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-badge">Special Lecture</span>
+                            <span class="news-badge editor">April 2026</span>
+                            <span class="news-journal">Dongseo University, Busan</span>
+                        </div>
+                        <h3 class="news-title">"나답게 AI와 디자인 씽킹하기"<br><span style="font-size: 0.95rem; color: var(--text-light); font-weight: 400; font-style: italic;">Designing with AI in your own way</span></h3>
+                        <p class="news-description">This special lecture explored how generative AI can be integrated into a personalized design thinking process, touching on AI and emotions, vibe design, and the role of individual creative voices in collaboration with AI tools.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-photo">
+                        <img src="md2025_workshop.png" alt="MD2025 Medical Design Conference Workshop — AI-enhanced Design Thinking">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-badge">Workshop Lecture</span>
+                            <span class="news-badge editor">December 2025</span>
+                            <span class="news-journal">Min-Sheng Smart Medical City, Taiwan</span>
+                        </div>
+                        <h3 class="news-title">AI-enhanced Design Thinking: Designing Empathetic Intelligence for Healthcare</h3>
+                        <p class="news-description">Hosted at Min-Sheng Smart Medical City in Taoyuan, Taiwan, this workshop lecture examined how AI-enhanced design thinking can shape healthcare experiences — and how empathetic intelligence might be intentionally designed into AI-supported medical care.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-photo">
+                        <img src="KIPO.png" alt="KIPO-WIPO Training Course in Design Examination, Protection and Strategy — Recent Design Protection Issues focused on the EU">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-badge">Invited Lecture</span>
+                            <span class="news-badge editor">October 2025</span>
+                            <span class="news-journal">KIPO &times; WIPO Training Course, Korea</span>
+                        </div>
+                        <h3 class="news-title">Recent Design Protection Issues — focused on the EU<br><span style="font-size: 0.95rem; color: var(--text-light); font-weight: 400; font-style: italic;">2025 Training Course in Design Examination, Protection and Strategy</span></h3>
+                        <p class="news-description">Co-hosted by the Korean Intellectual Property Office (KIPO) and the World Intellectual Property Organization (WIPO), this training course gathered around 25 national IP officers from 15 countries — including the United States, India, and Brazil. Prof. Baek delivered a lecture on recent EU design protection developments and their implications for global practice.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-photo">
+                        <img src="inclusive.jpg" alt="2025 Gwangju Design Biennale 72-Hour Inclusive Design Challenge — Behind The Scenes">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-badge">Tutor</span>
+                            <span class="news-badge editor">September 2025</span>
+                            <span class="news-journal">Gwangju Design Biennale, Korea</span>
+                        </div>
+                        <h3 class="news-title">2025 Gwangju Design Biennale<br><span style="font-size: 0.95rem; color: var(--text-light); font-weight: 400; font-style: italic;">72-Hour Inclusive Design Challenge</span></h3>
+                        <p class="news-description">Held during the 2025 Gwangju Design Biennale under the theme "You, The World," this 72-hour intensive challenge gathered international student teams to collaborate on inclusive design solutions. Prof. Baek participated as a tutor, mentoring teams throughout the program.</p>
+                        <a href="https://www.youtube.com/watch?v=zQniOKclUxA" target="_blank" rel="noopener noreferrer" class="news-cta">Watch Video</a>
                     </div>
                 </article>
             </div>
@@ -1050,8 +1187,8 @@
             </div>
         </section>
 
-        <section id="director">
-            <h2 class="section-title">Director</h2>
+        <section id="members">
+            <h2 class="section-title">Members</h2>
             
             <div class="director-header">
                 <div class="director-image-wrapper">
@@ -1180,6 +1317,90 @@
                     <li>Research Committee, Design Forum, Ministry of Knowledge and Economy, Korea, 2009</li>
                     <li>Samsung Electronics, Samsung Design Membership, 1998-2001</li>
                 </ul>
+            </div>
+
+            <div class="cv-section">
+                <h4 class="cv-section-title">M.A. Students</h4>
+                <div class="students-grid">
+                    <div class="student-card">
+                        <div class="student-visual">
+                            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <radialGradient id="sun-nayeon" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" stop-color="#c8a971" stop-opacity="0.9"/>
+                                        <stop offset="100%" stop-color="#c8a971" stop-opacity="0"/>
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="40" cy="35" r="0.8" fill="white" opacity="0.7"/>
+                                <circle cx="80" cy="50" r="0.6" fill="white" opacity="0.5"/>
+                                <circle cx="120" cy="25" r="1" fill="white" opacity="0.8"/>
+                                <circle cx="155" cy="60" r="0.5" fill="white" opacity="0.4"/>
+                                <circle cx="220" cy="40" r="0.9" fill="white" opacity="0.6"/>
+                                <circle cx="260" cy="25" r="0.7" fill="white" opacity="0.7"/>
+                                <circle cx="290" cy="55" r="0.6" fill="white" opacity="0.5"/>
+                                <circle cx="55" cy="120" r="0.6" fill="white" opacity="0.5"/>
+                                <circle cx="100" cy="155" r="0.7" fill="white" opacity="0.6"/>
+                                <circle cx="190" cy="135" r="0.5" fill="white" opacity="0.4"/>
+                                <circle cx="240" cy="155" r="0.8" fill="white" opacity="0.7"/>
+                                <circle cx="280" cy="120" r="0.6" fill="white" opacity="0.5"/>
+                                <circle cx="240" cy="90" r="60" fill="url(#sun-nayeon)" opacity="0.5"/>
+                                <circle cx="240" cy="90" r="32" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.85"/>
+                                <circle cx="240" cy="90" r="32" fill="#1a1f36"/>
+                                <circle cx="232" cy="82" r="3" fill="#c8a971" opacity="0.4"/>
+                                <circle cx="248" cy="95" r="2" fill="#c8a971" opacity="0.3"/>
+                                <ellipse cx="240" cy="90" rx="58" ry="6" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.6" transform="rotate(-15 240 90)"/>
+                            </svg>
+                        </div>
+                        <div class="student-info">
+                            <h5 class="student-name">Nayeon Kim</h5>
+                            <p class="student-research-label">Research Topic</p>
+                            <p class="student-research-topic">Designing for Rest and Emotional Recovery in Long-Duration Space Work Environments: A Study from a Speculative Design Perspective</p>
+                        </div>
+                    </div>
+                    <div class="student-card">
+                        <div class="student-visual">
+                            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.08" stroke="#c8a971" stroke-width="0.5">
+                                    <line x1="0" y1="40" x2="320" y2="40"/>
+                                    <line x1="0" y1="80" x2="320" y2="80"/>
+                                    <line x1="0" y1="120" x2="320" y2="120"/>
+                                    <line x1="40" y1="0" x2="40" y2="180"/>
+                                    <line x1="120" y1="0" x2="120" y2="180"/>
+                                    <line x1="200" y1="0" x2="200" y2="180"/>
+                                    <line x1="280" y1="0" x2="280" y2="180"/>
+                                </g>
+                                <g transform="translate(160, 28)">
+                                    <circle cx="0" cy="0" r="14" fill="#c8a971" opacity="0.15"/>
+                                    <polygon points="0,-7 2.1,-2.1 7,-2.1 3.1,1.4 4.9,6 0,3.1 -4.9,6 -3.1,1.4 -7,-2.1 -2.1,-2.1" fill="#c8a971" opacity="0.9"/>
+                                </g>
+                                <polygon points="113,68 207,68 160,42" fill="#c8a971" opacity="0.1"/>
+                                <polygon points="113,68 207,68 160,42" fill="none" stroke="#c8a971" stroke-width="1.3" opacity="0.9"/>
+                                <rect x="111" y="68" width="98" height="5" fill="#c8a971" opacity="0.6"/>
+                                <rect x="118" y="71" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="138" y="71" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="172" y="71" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="192" y="71" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="120" y="73" width="6" height="51" fill="#c8a971" opacity="0.75"/>
+                                <rect x="140" y="73" width="6" height="51" fill="#c8a971" opacity="0.75"/>
+                                <rect x="174" y="73" width="6" height="51" fill="#c8a971" opacity="0.75"/>
+                                <rect x="194" y="73" width="6" height="51" fill="#c8a971" opacity="0.75"/>
+                                <rect x="118" y="124" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="138" y="124" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="172" y="124" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="192" y="124" width="10" height="3" fill="#c8a971" opacity="0.85"/>
+                                <rect x="108" y="127" width="104" height="4" fill="#c8a971" opacity="0.65"/>
+                                <rect x="103" y="131" width="114" height="4" fill="#c8a971" opacity="0.5"/>
+                                <rect x="98" y="135" width="124" height="4" fill="#c8a971" opacity="0.4"/>
+                                <text x="160" y="160" text-anchor="middle" font-family="serif" font-size="9" fill="#c8a971" opacity="0.5" letter-spacing="2">DESIGN POLICY</text>
+                            </svg>
+                        </div>
+                        <div class="student-info">
+                            <h5 class="student-name">Nathalia Guijaya</h5>
+                            <p class="student-research-label">Research Topic</p>
+                            <p class="student-research-topic">Integrating the Creative Economy and National Design Strategy: Positioning Design as a Strategic Tool in Indonesia</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
