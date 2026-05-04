@@ -214,6 +214,136 @@
             line-height: 1.6;
         }
 
+        /* News Section */
+        #news { border-top: none; padding-top: 4rem; }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1000px;
+        }
+        .news-card {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: start;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent);
+        }
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+        .news-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--accent-light);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+        .news-content { min-width: 0; }
+        .news-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+        .news-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: var(--primary);
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 600;
+            border-radius: 6px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .news-badge.editor {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .news-journal {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+            font-style: italic;
+        }
+        .news-title {
+            font-size: 1.35rem;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            line-height: 1.4;
+            letter-spacing: -0.01em;
+        }
+        .news-description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+        .news-deadline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1rem;
+            background: var(--bg-subtle);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+        }
+        .news-deadline strong {
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .news-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.4rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .news-cta:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateX(2px);
+        }
+        .news-cta::after {
+            content: '→';
+            transition: transform 0.3s ease;
+        }
+        .news-cta:hover::after { transform: translateX(3px); }
+
         /* Framework Infographic */
         .framework-section {
             margin-top: 4rem;
@@ -685,6 +815,8 @@
             .impact-grid { grid-template-columns: 1fr; }
             .framework-pillars { grid-template-columns: 1fr; }
             .framework-foundation { grid-template-columns: 1fr; }
+            .news-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.8rem; }
+            .news-title { font-size: 1.15rem; }
         }
         html { scroll-behavior: smooth; }
     </style>
@@ -700,6 +832,7 @@
                 <span class="brand-lab">Design Intelligence Lab</span>
             </div>
             <ul class="nav-links">
+                <li><a href="#news">News</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#director">Director</a></li>
@@ -729,6 +862,28 @@
                 <div class="hero-logo">
                     <img src="DI-Lab-Logo-Final.png" alt="Design Intelligence Lab Logo">
                 </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <h2 class="section-title">News</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-icon">📢</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-badge">Call for Papers</span>
+                            <span class="news-badge editor">Topic Editor: E. Baek</span>
+                            <span class="news-journal">Frontiers in Communication &amp; Frontiers in Human Dynamics</span>
+                        </div>
+                        <h3 class="news-title">The Symbiotic Shift: Generative AI as Co-Creation Catalyst in Human Creative Dynamics</h3>
+                        <div class="news-deadline">
+                            <span>📅</span>
+                            <span>Manuscript Submission Deadline: <strong>30 November 2026</strong></span>
+                        </div>
+                        <a href="https://www.frontiersin.org/research-topics/79585/the-symbiotic-shift-generative-ai-as-co-creation-catalyst-in-human-creative-dynamics" target="_blank" rel="noopener noreferrer" class="news-cta">View Research Topic</a>
+                    </div>
+                </article>
             </div>
         </section>
 
