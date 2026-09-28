@@ -1,0 +1,84 @@
+<svg viewBox="0 0 520 293" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f36"/>
+      <stop offset="100%" stop-color="#2d3748"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8a971" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#c8a971" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c8a971" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="293" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#c8a971" stroke-width="0.5">
+    <line x1="0" y1="73" x2="520" y2="73"/>
+    <line x1="0" y1="146" x2="520" y2="146"/>
+    <line x1="0" y1="220" x2="520" y2="220"/>
+    <line x1="130" y1="0" x2="130" y2="293"/>
+    <line x1="260" y1="0" x2="260" y2="293"/>
+    <line x1="390" y1="0" x2="390" y2="293"/>
+  </g>
+
+  <!-- Globe outline (center) -->
+  <circle cx="260" cy="146" r="72" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="260" cy="146" r="50" fill="none" stroke="#c8a971" stroke-width="0.5" opacity="0.15"/>
+  <!-- Latitude lines -->
+  <ellipse cx="260" cy="146" rx="72" ry="24" fill="none" stroke="#c8a971" stroke-width="0.5" opacity="0.2"/>
+  <ellipse cx="260" cy="122" rx="60" ry="10" fill="none" stroke="#c8a971" stroke-width="0.4" opacity="0.12"/>
+  <ellipse cx="260" cy="170" rx="60" ry="10" fill="none" stroke="#c8a971" stroke-width="0.4" opacity="0.12"/>
+  <!-- Meridian -->
+  <ellipse cx="260" cy="146" rx="30" ry="72" fill="none" stroke="#c8a971" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Italy dot -->
+  <circle cx="195" cy="128" r="5" fill="#c8a971" opacity="0.9"/>
+  <circle cx="195" cy="128" r="10" fill="#c8a971" opacity="0.15"/>
+  <!-- Italy label -->
+  <text x="195" y="118" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.7" letter-spacing="1">TORINO</text>
+
+  <!-- Korea dot -->
+  <circle cx="325" cy="135" r="5" fill="#c8a971" opacity="0.9"/>
+  <circle cx="325" cy="135" r="10" fill="#c8a971" opacity="0.15"/>
+  <!-- Korea label -->
+  <text x="325" y="125" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.7" letter-spacing="1">SEOUL</text>
+
+  <!-- Connecting arc -->
+  <path d="M 200 128 Q 260 95 320 135" fill="none" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- People silhouettes (2 female, 1 male) - abstract -->
+  <!-- Female 1 -->
+  <g transform="translate(215, 185)">
+    <circle cx="0" cy="-22" r="7" fill="#c8a971" opacity="0.7"/>
+    <path d="M-6,-14 Q-8,0 -10,14 M6,-14 Q8,0 10,14" stroke="#c8a971" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M-10,14 Q-5,20 0,14 Q5,20 10,14" stroke="#c8a971" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <!-- Dress shape -->
+    <path d="M-6,-14 Q-12,0 -8,14 Q0,18 8,14 Q12,0 6,-14" fill="#c8a971" opacity="0.2"/>
+  </g>
+  <!-- Female 2 -->
+  <g transform="translate(260, 185)">
+    <circle cx="0" cy="-22" r="7" fill="#c8a971" opacity="0.7"/>
+    <path d="M-6,-14 Q-8,0 -10,14 M6,-14 Q8,0 10,14" stroke="#c8a971" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M-10,14 Q-5,20 0,14 Q5,20 10,14" stroke="#c8a971" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M-6,-14 Q-12,0 -8,14 Q0,18 8,14 Q12,0 6,-14" fill="#c8a971" opacity="0.2"/>
+  </g>
+  <!-- Male -->
+  <g transform="translate(305, 185)">
+    <circle cx="0" cy="-22" r="7" fill="#c8a971" opacity="0.7"/>
+    <path d="M-6,-14 Q-7,0 -8,14 M6,-14 Q7,0 8,14" stroke="#c8a971" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M-8,14 L-6,28 M8,14 L6,28" stroke="#c8a971" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <!-- Shirt shape -->
+    <path d="M-6,-14 Q-9,0 -8,14 Q0,16 8,14 Q9,0 6,-14" fill="#c8a971" opacity="0.15"/>
+  </g>
+
+  <!-- Welcome text -->
+  <text x="260" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#c8a971" letter-spacing="3" opacity="0.95">WELCOME</text>
+  <text x="260" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" fill="#c8a971" opacity="0.6" letter-spacing="1.5">POLITECNICO DI TORINO · VISITING RESEARCHERS</text>
+
+  <!-- Decorative line -->
+  <line x1="80" y1="240" x2="180" y2="240" stroke="#c8a971" stroke-width="0.5" opacity="0.3"/>
+  <line x1="340" y1="240" x2="440" y2="240" stroke="#c8a971" stroke-width="0.5" opacity="0.3"/>
+</svg>
