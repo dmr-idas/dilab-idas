@@ -1527,15 +1527,30 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <circle cx="160" cy="90" r="70" fill="none" stroke="#c8a971" stroke-width="0.6" opacity="0.2"/>
-                                <circle cx="160" cy="90" r="50" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.3"/>
-                                <circle cx="160" cy="90" r="30" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
-                                <circle cx="160" cy="90" r="12" fill="#c8a971" opacity="0.15"/>
-                                <path d="M100,90 Q130,60 160,90 Q190,120 220,90" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.7"/>
-                                <path d="M80,110 Q120,70 160,90 Q200,110 240,80" fill="none" stroke="#c8a971" stroke-width="0.6" opacity="0.35"/>
-                                <circle cx="100" cy="90" r="3" fill="#c8a971" opacity="0.8"/>
-                                <circle cx="220" cy="90" r="3" fill="#c8a971" opacity="0.8"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">AUDIENCE · CIRCULATION</text>
+                                <!-- Floor plan: outer gallery walls -->
+                                <rect x="45" y="28" width="230" height="115" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.5"/>
+                                <!-- Interior walls dividing space into zones -->
+                                <line x1="145" y1="28" x2="145" y2="100" stroke="#c8a971" stroke-width="0.8" opacity="0.4"/>
+                                <line x1="200" y1="80" x2="275" y2="80" stroke="#c8a971" stroke-width="0.8" opacity="0.4"/>
+                                <!-- Entry gap -->
+                                <rect x="43" y="75" width="4" height="20" fill="#1a1f36"/>
+                                <!-- Immersion zone (central) -->
+                                <circle cx="210" cy="55" r="18" fill="#c8a971" opacity="0.07"/>
+                                <circle cx="210" cy="55" r="10" fill="#c8a971" opacity="0.12"/>
+                                <circle cx="210" cy="55" r="4" fill="#c8a971" opacity="0.7"/>
+                                <!-- Audience movement paths -->
+                                <path d="M47,85 Q80,60 145,65 Q175,68 210,55" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.65" stroke-dasharray="4,2"/>
+                                <path d="M47,85 Q90,110 145,100 Q175,92 210,100 Q240,108 265,85" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.35" stroke-dasharray="3,3"/>
+                                <!-- Visitor dots along paths -->
+                                <circle cx="85" cy="68" r="2.5" fill="#c8a971" opacity="0.7"/>
+                                <circle cx="120" cy="64" r="2.5" fill="#c8a971" opacity="0.7"/>
+                                <circle cx="175" cy="60" r="2.5" fill="#c8a971" opacity="0.6"/>
+                                <circle cx="110" cy="104" r="2" fill="#c8a971" opacity="0.45"/>
+                                <circle cx="165" cy="98" r="2" fill="#c8a971" opacity="0.45"/>
+                                <circle cx="240" cy="100" r="2" fill="#c8a971" opacity="0.4"/>
+                                <!-- Entry label -->
+                                <text x="38" y="88" font-family="serif" font-size="6" fill="#c8a971" opacity="0.4" text-anchor="middle">IN</text>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">AUDIENCE CIRCULATION · AFFORDANCE</text>
                             </svg>
                         </div>
                         <div class="student-info">
@@ -1548,27 +1563,28 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <circle cx="160" cy="90" r="18" fill="#c8a971" opacity="0.12"/>
-                                <circle cx="160" cy="90" r="6" fill="#c8a971" opacity="0.8"/>
-                                <circle cx="80" cy="50" r="5" fill="#c8a971" opacity="0.6"/>
-                                <circle cx="240" cy="50" r="5" fill="#c8a971" opacity="0.6"/>
-                                <circle cx="80" cy="130" r="5" fill="#c8a971" opacity="0.6"/>
-                                <circle cx="240" cy="130" r="5" fill="#c8a971" opacity="0.6"/>
-                                <circle cx="50" cy="90" r="4" fill="#c8a971" opacity="0.4"/>
-                                <circle cx="270" cy="90" r="4" fill="#c8a971" opacity="0.4"/>
-                                <line x1="160" y1="90" x2="80" y2="50" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
-                                <line x1="160" y1="90" x2="240" y2="50" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
-                                <line x1="160" y1="90" x2="80" y2="130" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
-                                <line x1="160" y1="90" x2="240" y2="130" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
-                                <line x1="160" y1="90" x2="50" y2="90" stroke="#c8a971" stroke-width="0.5" opacity="0.3"/>
-                                <line x1="160" y1="90" x2="270" y2="90" stroke="#c8a971" stroke-width="0.5" opacity="0.3"/>
-                                <line x1="80" y1="50" x2="240" y2="50" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
-                                <line x1="80" y1="130" x2="240" y2="130" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">AI · DESIGN PROCESS</text>
+                                <!-- Left ellipse: Field Context -->
+                                <ellipse cx="125" cy="82" rx="68" ry="48" fill="#c8a971" opacity="0.06" stroke="#c8a971" stroke-width="1" opacity2="0.5"/>
+                                <ellipse cx="125" cy="82" rx="68" ry="48" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
+                                <!-- Right ellipse: Problem Frames -->
+                                <ellipse cx="200" cy="82" rx="68" ry="48" fill="#c8a971" opacity="0.06" stroke="#c8a971" stroke-width="1"/>
+                                <ellipse cx="200" cy="82" rx="68" ry="48" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
+                                <!-- Intersection highlight -->
+                                <path d="M162,40 Q185,55 185,82 Q185,109 162,124 Q140,109 140,82 Q140,55 162,40 Z" fill="#c8a971" opacity="0.12"/>
+                                <!-- AI spark at intersection -->
+                                <circle cx="162" cy="82" r="8" fill="#c8a971" opacity="0.25"/>
+                                <circle cx="162" cy="82" r="3.5" fill="#c8a971" opacity="0.9"/>
+                                <!-- Labels inside ellipses -->
+                                <text x="98" y="80" text-anchor="middle" font-family="serif" font-size="7.5" fill="#c8a971" opacity="0.5" letter-spacing="0.5">FIELD</text>
+                                <text x="98" y="90" text-anchor="middle" font-family="serif" font-size="7.5" fill="#c8a971" opacity="0.5" letter-spacing="0.5">CONTEXT</text>
+                                <text x="226" y="80" text-anchor="middle" font-family="serif" font-size="7.5" fill="#c8a971" opacity="0.5" letter-spacing="0.5">PROBLEM</text>
+                                <text x="226" y="90" text-anchor="middle" font-family="serif" font-size="7.5" fill="#c8a971" opacity="0.5" letter-spacing="0.5">FRAMES</text>
+                                <text x="162" y="102" text-anchor="middle" font-family="serif" font-size="6.5" fill="#c8a971" opacity="0.65" letter-spacing="0.5">GEN AI</text>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">INTERACTION · AI-COLLABORATIVE DESIGN</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Jin Hwa Kyeong</h5>
+                            <h5 class="student-name">Hwa Kyeong Jin</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">A Study on the Process of Interaction Between Field Context and Problem Frames in Generative AI–Collaborative Design</p>
                         </div>
@@ -1577,27 +1593,39 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <circle cx="160" cy="80" r="14" fill="#c8a971" opacity="0.2"/>
-                                <circle cx="160" cy="80" r="6" fill="#c8a971" opacity="0.9"/>
-                                <circle cx="90" cy="110" r="10" fill="#c8a971" opacity="0.15"/>
-                                <circle cx="90" cy="110" r="5" fill="#c8a971" opacity="0.7"/>
-                                <circle cx="230" cy="110" r="10" fill="#c8a971" opacity="0.15"/>
-                                <circle cx="230" cy="110" r="5" fill="#c8a971" opacity="0.7"/>
-                                <circle cx="55" cy="65" r="8" fill="#c8a971" opacity="0.12"/>
-                                <circle cx="55" cy="65" r="4" fill="#c8a971" opacity="0.5"/>
-                                <circle cx="265" cy="65" r="8" fill="#c8a971" opacity="0.12"/>
-                                <circle cx="265" cy="65" r="4" fill="#c8a971" opacity="0.5"/>
-                                <line x1="160" y1="80" x2="90" y2="110" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
-                                <line x1="160" y1="80" x2="230" y2="110" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
-                                <line x1="160" y1="80" x2="55" y2="65" stroke="#c8a971" stroke-width="0.7" opacity="0.35"/>
-                                <line x1="160" y1="80" x2="265" y2="65" stroke="#c8a971" stroke-width="0.7" opacity="0.35"/>
-                                <line x1="90" y1="110" x2="55" y2="65" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
-                                <line x1="230" y1="110" x2="265" y2="65" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">CREATIVE HUBS · INDONESIA</text>
+                                <!-- Archipelago-inspired island shapes: Indonesia reference -->
+                                <!-- Hub 1: large central island/hub -->
+                                <ellipse cx="160" cy="80" rx="30" ry="14" fill="#c8a971" opacity="0.18" stroke="#c8a971" stroke-width="1" opacity2="0.6"/>
+                                <ellipse cx="160" cy="80" rx="30" ry="14" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.6"/>
+                                <circle cx="160" cy="80" r="5" fill="#c8a971" opacity="0.85"/>
+                                <!-- Hub 2 -->
+                                <ellipse cx="72" cy="58" rx="20" ry="9" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="0.8" opacity2="0.5"/>
+                                <ellipse cx="72" cy="58" rx="20" ry="9" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <circle cx="72" cy="58" r="3.5" fill="#c8a971" opacity="0.7"/>
+                                <!-- Hub 3 -->
+                                <ellipse cx="248" cy="55" rx="24" ry="10" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="0.8" opacity2="0.5"/>
+                                <ellipse cx="248" cy="55" rx="24" ry="10" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <circle cx="248" cy="55" r="3.5" fill="#c8a971" opacity="0.7"/>
+                                <!-- Hub 4 -->
+                                <ellipse cx="88" cy="118" rx="18" ry="8" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="0.7" opacity2="0.4"/>
+                                <ellipse cx="88" cy="118" rx="18" ry="8" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <circle cx="88" cy="118" r="3" fill="#c8a971" opacity="0.6"/>
+                                <!-- Hub 5 -->
+                                <ellipse cx="240" cy="115" rx="22" ry="9" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="0.7" opacity2="0.4"/>
+                                <ellipse cx="240" cy="115" rx="22" ry="9" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <circle cx="240" cy="115" r="3" fill="#c8a971" opacity="0.6"/>
+                                <!-- Connecting curves between hubs -->
+                                <path d="M92,58 Q126,62 130,80" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.4"/>
+                                <path d="M224,55 Q200,60 190,80" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.4"/>
+                                <path d="M106,118 Q133,105 130,94" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.35"/>
+                                <path d="M218,115 Q195,105 190,94" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.35"/>
+                                <path d="M72,67 Q70,90 88,109" fill="none" stroke="#c8a971" stroke-width="0.5" opacity="0.2"/>
+                                <path d="M248,65 Q250,90 240,106" fill="none" stroke="#c8a971" stroke-width="0.5" opacity="0.2"/>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">CREATIVE HUB NETWORKS · INDONESIA</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Dwiana Clara</h5>
+                            <h5 class="student-name">Clara Dwiana</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">Designing Creative Hub Networks in Indonesia: Positioning Design as a Strategic Tool for the Creative Economy</p>
                         </div>
@@ -1606,17 +1634,28 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <rect x="60" y="35" width="200" height="120" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.6"/>
-                                <rect x="75" y="50" width="170" height="90" fill="none" stroke="#c8a971" stroke-width="0.6" opacity="0.3"/>
-                                <rect x="90" y="65" width="140" height="60" fill="#c8a971" opacity="0.05"/>
-                                <line x1="60" y1="95" x2="260" y2="95" stroke="#c8a971" stroke-width="0.5" opacity="0.25"/>
-                                <line x1="160" y1="35" x2="160" y2="155" stroke="#c8a971" stroke-width="0.5" opacity="0.25"/>
-                                <circle cx="160" cy="95" r="4" fill="#c8a971" opacity="0.7"/>
-                                <circle cx="100" cy="70" r="2.5" fill="#c8a971" opacity="0.5"/>
-                                <circle cx="220" cy="70" r="2.5" fill="#c8a971" opacity="0.5"/>
-                                <circle cx="100" cy="120" r="2.5" fill="#c8a971" opacity="0.5"/>
-                                <circle cx="220" cy="120" r="2.5" fill="#c8a971" opacity="0.5"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">GALLERY · DESIGN AUDIT</text>
+                                <!-- Gallery floor plan -->
+                                <rect x="40" y="25" width="240" height="125" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.55"/>
+                                <!-- Interior wall: two gallery rooms -->
+                                <line x1="160" y1="25" x2="160" y2="110" stroke="#c8a971" stroke-width="0.9" opacity="0.4"/>
+                                <!-- Door gaps -->
+                                <rect x="39" y="72" width="3" height="18" fill="#1a1f36"/>
+                                <rect x="150" y="80" width="21" height="3" fill="#1a1f36"/>
+                                <!-- Artwork positions on walls (small rectangles) -->
+                                <rect x="55" y="38" width="14" height="10" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.5"/>
+                                <rect x="80" y="38" width="20" height="10" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.5"/>
+                                <rect x="55" y="118" width="16" height="10" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <rect x="185" y="38" width="14" height="10" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.5"/>
+                                <rect x="215" y="38" width="22" height="10" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.5"/>
+                                <rect x="220" y="118" width="16" height="10" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <!-- Decision boundary line (dashed diagonal) -->
+                                <line x1="40" y1="25" x2="280" y2="150" stroke="#c8a971" stroke-width="1" opacity="0.3" stroke-dasharray="5,4"/>
+                                <!-- Audit checkpoints -->
+                                <circle cx="100" cy="75" r="5" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.7"/>
+                                <path d="M97,75 L99,77 L103,72" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.7"/>
+                                <circle cx="220" cy="90" r="5" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
+                                <path d="M217,90 L219,92 L223,87" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">GALLERY · DECISION BOUNDARIES · AUDIT</text>
                             </svg>
                         </div>
                         <div class="student-info">
@@ -1629,22 +1668,34 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <circle cx="100" cy="80" r="28" fill="#c8a971" opacity="0.08"/>
-                                <circle cx="100" cy="80" r="18" fill="#c8a971" opacity="0.12"/>
-                                <circle cx="100" cy="80" r="8" fill="#c8a971" opacity="0.6"/>
-                                <circle cx="190" cy="70" r="22" fill="#c8a971" opacity="0.08"/>
-                                <circle cx="190" cy="70" r="12" fill="#c8a971" opacity="0.15"/>
-                                <circle cx="190" cy="70" r="5" fill="#c8a971" opacity="0.55"/>
-                                <circle cx="245" cy="105" r="16" fill="#c8a971" opacity="0.08"/>
-                                <circle cx="245" cy="105" r="8" fill="#c8a971" opacity="0.18"/>
-                                <circle cx="245" cy="105" r="3.5" fill="#c8a971" opacity="0.5"/>
-                                <circle cx="155" cy="120" r="12" fill="#c8a971" opacity="0.1"/>
-                                <circle cx="155" cy="120" r="5" fill="#c8a971" opacity="0.4"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">PLAY · SENSORY DESIGN</text>
+                                <!-- Ground / outdoor floor -->
+                                <line x1="30" y1="118" x2="290" y2="118" stroke="#c8a971" stroke-width="1" opacity="0.4"/>
+                                <!-- Play structures: slide -->
+                                <polygon points="80,118 80,75 100,75" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.55"/>
+                                <line x1="100" y1="75" x2="120" y2="118" stroke="#c8a971" stroke-width="1.2" opacity="0.55"/>
+                                <!-- Swing frame -->
+                                <line x1="155" y1="75" x2="155" y2="118" stroke="#c8a971" stroke-width="1" opacity="0.4"/>
+                                <line x1="195" y1="75" x2="195" y2="118" stroke="#c8a971" stroke-width="1" opacity="0.4"/>
+                                <line x1="155" y1="75" x2="195" y2="75" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
+                                <line x1="168" y1="75" x2="168" y2="100" stroke="#c8a971" stroke-width="0.8" opacity="0.45"/>
+                                <line x1="182" y1="75" x2="182" y2="100" stroke="#c8a971" stroke-width="0.8" opacity="0.45"/>
+                                <rect x="163" y="100" width="24" height="6" rx="1" fill="#c8a971" opacity="0.4"/>
+                                <!-- Sensory stimulus bubbles (physical-digital) -->
+                                <circle cx="240" cy="90" r="18" fill="#c8a971" opacity="0.07" stroke="#c8a971" stroke-width="0.7" opacity2="0.3"/>
+                                <circle cx="240" cy="90" r="18" fill="none" stroke="#c8a971" stroke-width="0.7" opacity="0.3"/>
+                                <circle cx="260" cy="70" r="11" fill="#c8a971" opacity="0.07" stroke="#c8a971" stroke-width="0.6" opacity2="0.25"/>
+                                <circle cx="260" cy="70" r="11" fill="none" stroke="#c8a971" stroke-width="0.6" opacity="0.25"/>
+                                <circle cx="225" cy="68" r="8" fill="#c8a971" opacity="0.07" stroke="#c8a971" stroke-width="0.6" opacity2="0.2"/>
+                                <circle cx="225" cy="68" r="8" fill="none" stroke="#c8a971" stroke-width="0.6" opacity="0.2"/>
+                                <!-- Small children dots near structures -->
+                                <circle cx="88" cy="116" r="3" fill="#c8a971" opacity="0.6"/>
+                                <circle cx="175" cy="116" r="3" fill="#c8a971" opacity="0.6"/>
+                                <circle cx="240" cy="116" r="3" fill="#c8a971" opacity="0.5"/>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">SENSORY PLAY · PHYGITAL ENVIRONMENT</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Kim Kyungeun</h5>
+                            <h5 class="student-name">Kyungeun Kim</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">Development and Validation of a Design Framework for Sensory-Responsive Physical-Digital Play Environments: Focusing on Toddler-Friendly Public Outdoor Playgrounds</p>
                         </div>
@@ -1653,21 +1704,44 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <g opacity="0.08" stroke="#c8a971" stroke-width="0.4">
-                                    <line x1="60" y1="130" x2="60" y2="40"/><line x1="100" y1="130" x2="100" y2="40"/><line x1="140" y1="130" x2="140" y2="40"/>
-                                    <line x1="180" y1="130" x2="180" y2="40"/><line x1="220" y1="130" x2="220" y2="40"/><line x1="260" y1="130" x2="260" y2="40"/>
-                                </g>
-                                <rect x="62" y="85" width="36" height="45" fill="#c8a971" opacity="0.5" rx="2"/>
-                                <rect x="102" y="65" width="36" height="65" fill="#c8a971" opacity="0.55" rx="2"/>
-                                <rect x="142" y="50" width="36" height="80" fill="#c8a971" opacity="0.6" rx="2"/>
-                                <rect x="182" y="70" width="36" height="60" fill="#c8a971" opacity="0.5" rx="2"/>
-                                <rect x="222" y="55" width="36" height="75" fill="#c8a971" opacity="0.65" rx="2"/>
-                                <line x1="55" y1="130" x2="265" y2="130" stroke="#c8a971" stroke-width="0.8" opacity="0.4"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">FINTECH · AI · CX DESIGN</text>
+                                <!-- CX Journey map: horizontal touchpoints -->
+                                <line x1="35" y1="75" x2="285" y2="75" stroke="#c8a971" stroke-width="0.8" opacity="0.3"/>
+                                <!-- 5 Touchpoint circles -->
+                                <circle cx="60" cy="75" r="10" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="1" opacity2="0.6"/>
+                                <circle cx="60" cy="75" r="10" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.6"/>
+                                <circle cx="60" cy="75" r="4" fill="#c8a971" opacity="0.8"/>
+                                <circle cx="120" cy="75" r="10" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="1" opacity2="0.6"/>
+                                <circle cx="120" cy="75" r="10" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.6"/>
+                                <circle cx="120" cy="75" r="4" fill="#c8a971" opacity="0.8"/>
+                                <circle cx="180" cy="75" r="13" fill="#c8a971" opacity="0.18" stroke="#c8a971" stroke-width="1.2" opacity2="0.8"/>
+                                <circle cx="180" cy="75" r="13" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.8"/>
+                                <circle cx="180" cy="75" r="5" fill="#c8a971" opacity="0.9"/>
+                                <circle cx="235" cy="75" r="10" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="1" opacity2="0.6"/>
+                                <circle cx="235" cy="75" r="10" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.6"/>
+                                <circle cx="235" cy="75" r="4" fill="#c8a971" opacity="0.8"/>
+                                <circle cx="280" cy="75" r="8" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="0.8" opacity2="0.5"/>
+                                <circle cx="280" cy="75" r="8" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <circle cx="280" cy="75" r="3" fill="#c8a971" opacity="0.7"/>
+                                <!-- Modality tags below each touchpoint -->
+                                <rect x="45" y="92" width="30" height="8" rx="2" fill="#c8a971" opacity="0.15"/>
+                                <rect x="105" y="92" width="30" height="8" rx="2" fill="#c8a971" opacity="0.15"/>
+                                <rect x="163" y="95" width="34" height="8" rx="2" fill="#c8a971" opacity="0.2"/>
+                                <rect x="220" y="92" width="30" height="8" rx="2" fill="#c8a971" opacity="0.15"/>
+                                <!-- Multimodal AI evaluation grid below -->
+                                <line x1="35" y1="115" x2="285" y2="115" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <line x1="35" y1="128" x2="285" y2="128" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <line x1="35" y1="115" x2="35" y2="128" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <line x1="115" y1="115" x2="115" y2="128" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <line x1="195" y1="115" x2="195" y2="128" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <line x1="285" y1="115" x2="285" y2="128" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <rect x="38" y="118" width="60" height="7" rx="1" fill="#c8a971" opacity="0.3"/>
+                                <rect x="118" y="118" width="45" height="7" rx="1" fill="#c8a971" opacity="0.2"/>
+                                <rect x="198" y="118" width="70" height="7" rx="1" fill="#c8a971" opacity="0.35"/>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">MULTIMODAL AI · CX EVALUATION · FINTECH</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Im Hajeong</h5>
+                            <h5 class="student-name">Hajeong Im</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">A Study on Multimodal AI Methodology for Evaluating Customer Experience Design in Fintech Services</p>
                         </div>
@@ -1676,20 +1750,44 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <path d="M120,60 L200,60 L220,80 L220,120 L100,120 L100,80 Z" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.5"/>
-                                <path d="M110,80 L210,80" stroke="#c8a971" stroke-width="0.5" opacity="0.3"/>
-                                <path d="M110,95" stroke="#c8a971" stroke-width="0.5" opacity="0.3"/>
-                                <line x1="110" y1="95" x2="210" y2="95" stroke="#c8a971" stroke-width="0.5" opacity="0.25"/>
-                                <line x1="110" y1="110" x2="180" y2="110" stroke="#c8a971" stroke-width="0.5" opacity="0.2"/>
-                                <circle cx="160" cy="55" r="10" fill="#c8a971" opacity="0.15"/>
-                                <circle cx="160" cy="55" r="5" fill="#c8a971" opacity="0.6"/>
-                                <line x1="160" y1="60" x2="160" y2="78" stroke="#c8a971" stroke-width="0.8" opacity="0.4"/>
-                                <circle cx="220" cy="80" r="5" fill="#c8a971" opacity="0.7"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">DESIGNER SUPPORT · AX</text>
+                                <!-- Divider: BEFORE / AFTER AX -->
+                                <line x1="160" y1="22" x2="160" y2="138" stroke="#c8a971" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.3"/>
+                                <!-- Arrow (left→right transformation) -->
+                                <path d="M138,80 L182,80" stroke="#c8a971" stroke-width="1.2" opacity="0.55"/>
+                                <polygon points="180,77 188,80 180,83" fill="#c8a971" opacity="0.55"/>
+                                <!-- "AX" pivot label -->
+                                <rect x="148" y="70" width="24" height="14" rx="2" fill="#1a1f36"/>
+                                <text x="160" y="80" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.7" letter-spacing="1">AX</text>
+                                <!-- LEFT: designer working alone -->
+                                <circle cx="72" cy="54" r="9" fill="#c8a971" opacity="0.65"/>
+                                <path d="M66,64 Q64,85 65,98 Q72,102 79,98 Q80,85 78,64" fill="#c8a971" opacity="0.2"/>
+                                <!-- Solo linear workflow -->
+                                <rect x="45" y="108" width="52" height="7" rx="1" fill="#c8a971" opacity="0.18" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="45" y="119" width="52" height="7" rx="1" fill="#c8a971" opacity="0.13" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="45" y="130" width="52" height="7" rx="1" fill="#c8a971" opacity="0.08" stroke="#c8a971" stroke-width="0.5"/>
+                                <line x1="71" y1="103" x2="71" y2="108" stroke="#c8a971" stroke-width="0.6" opacity="0.3"/>
+                                <!-- RIGHT: designer + AI support scaffolding -->
+                                <circle cx="240" cy="62" r="9" fill="#c8a971" opacity="0.7"/>
+                                <path d="M234,72 Q232,90 233,103 Q240,107 247,103 Q248,90 246,72" fill="#c8a971" opacity="0.2"/>
+                                <!-- AI support nodes around designer -->
+                                <circle cx="200" cy="42" r="6" fill="#c8a971" opacity="0.2" stroke="#c8a971" stroke-width="0.8" opacity2="0.7"/>
+                                <circle cx="200" cy="42" r="6" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <line x1="205" y1="47" x2="231" y2="55" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <circle cx="278" cy="38" r="6" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <line x1="273" y1="43" x2="249" y2="55" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <circle cx="195" cy="84" r="6" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <line x1="201" y1="80" x2="231" y2="70" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <circle cx="282" cy="82" r="6" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.5"/>
+                                <line x1="276" y1="78" x2="249" y2="70" stroke="#c8a971" stroke-width="0.7" opacity="0.4"/>
+                                <!-- Supported workflow (shorter steps with connections) -->
+                                <rect x="215" y="112" width="50" height="7" rx="1" fill="#c8a971" opacity="0.22" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="215" y="123" width="50" height="7" rx="1" fill="#c8a971" opacity="0.16" stroke="#c8a971" stroke-width="0.5"/>
+                                <line x1="240" y1="108" x2="240" y2="112" stroke="#c8a971" stroke-width="0.6" opacity="0.3"/>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">DESIGNER SUPPORT · AX ERA</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Ko Hyunwoo</h5>
+                            <h5 class="student-name">Hyunwoo Ko</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">Developing Support Strategies for Designers in the AX Era: Case Analysis and an Investigation of Experiences</p>
                         </div>
@@ -1698,20 +1796,35 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <rect x="55" y="38" width="55" height="40" rx="2" fill="#c8a971" opacity="0.18" stroke="#c8a971" stroke-width="0.6"/>
-                                <rect x="120" y="30" width="70" height="50" rx="2" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="0.6"/>
-                                <rect x="200" y="42" width="65" height="38" rx="2" fill="#c8a971" opacity="0.15" stroke="#c8a971" stroke-width="0.6"/>
-                                <rect x="60" y="90" width="80" height="48" rx="2" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="0.6"/>
-                                <rect x="155" y="95" width="50" height="42" rx="2" fill="#c8a971" opacity="0.2" stroke="#c8a971" stroke-width="0.6"/>
-                                <rect x="215" y="93" width="55" height="45" rx="2" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="0.6"/>
-                                <circle cx="82" cy="58" r="6" fill="#c8a971" opacity="0.35"/>
-                                <circle cx="180" cy="55" r="6" fill="#c8a971" opacity="0.3"/>
-                                <circle cx="232" cy="61" r="5" fill="#c8a971" opacity="0.35"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">MOODBOARD · AI IDEATION</text>
+                                <!-- LEFT: Moodboard (asymmetric reference image grid) -->
+                                <rect x="28" y="28" width="46" height="32" rx="1" fill="#c8a971" opacity="0.22" stroke="#c8a971" stroke-width="0.7"/>
+                                <rect x="78" y="28" width="30" height="20" rx="1" fill="#c8a971" opacity="0.14" stroke="#c8a971" stroke-width="0.7"/>
+                                <rect x="78" y="52" width="30" height="28" rx="1" fill="#c8a971" opacity="0.18" stroke="#c8a971" stroke-width="0.7"/>
+                                <rect x="28" y="64" width="46" height="36" rx="1" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="0.7"/>
+                                <rect x="38" y="104" width="62" height="22" rx="1" fill="#c8a971" opacity="0.16" stroke="#c8a971" stroke-width="0.7"/>
+                                <!-- Moodboard interior detail lines (image content hint) -->
+                                <line x1="35" y1="42" x2="65" y2="42" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <line x1="35" y1="50" x2="58" y2="50" stroke="#c8a971" stroke-width="0.4" opacity="0.2"/>
+                                <!-- GenAI process arrow -->
+                                <path d="M120,76 Q142,60 158,72" fill="none" stroke="#c8a971" stroke-width="1.2" opacity="0.5"/>
+                                <polygon points="155,68 163,73 156,78" fill="#c8a971" opacity="0.5"/>
+                                <text x="138" y="58" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#c8a971" opacity="0.4" letter-spacing="0.5">GenAI</text>
+                                <!-- RIGHT: Design output space bounded by fixation curve -->
+                                <!-- Fixation boundary (closed dashed shape) -->
+                                <path d="M175,35 Q220,25 258,42 Q278,65 268,100 Q252,128 220,130 Q188,128 172,105 Q162,82 175,35 Z" fill="none" stroke="#c8a971" stroke-width="1" stroke-dasharray="4 3" opacity="0.45"/>
+                                <!-- AI output sketches inside boundary -->
+                                <rect x="185" y="50" width="32" height="22" rx="1" fill="#c8a971" opacity="0.12" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="225" y="45" width="28" height="18" rx="1" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="188" y="80" width="24" height="18" rx="1" fill="#c8a971" opacity="0.14" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="220" y="76" width="32" height="22" rx="1" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="0.5"/>
+                                <rect x="195" y="106" width="40" height="16" rx="1" fill="#c8a971" opacity="0.08" stroke="#c8a971" stroke-width="0.5"/>
+                                <!-- "FIXATION" label on boundary -->
+                                <text x="272" y="78" text-anchor="start" font-family="sans-serif" font-size="6" fill="#c8a971" opacity="0.35" letter-spacing="0.5">FIXATION</text>
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">MOODBOARD · GENAI · DESIGN FIXATION</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Song Chae Won</h5>
+                            <h5 class="student-name">Chae Won Song</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">The Effect of Pre-Ideation Moodboard Creation on Design Fixation in Generative AI-Based Design Ideation: Focusing on Self-Directed Reference Exploration</p>
                         </div>
@@ -1720,20 +1833,49 @@
                         <div class="student-visual">
                             <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="320" height="180" fill="#1a1f36"/>
-                                <path d="M80,130 Q80,50 160,40 Q240,50 240,130" fill="none" stroke="#c8a971" stroke-width="1.5" opacity="0.7"/>
-                                <path d="M95,130 Q95,62 160,53 Q225,62 225,130" fill="none" stroke="#c8a971" stroke-width="0.6" opacity="0.3"/>
-                                <line x1="70" y1="130" x2="250" y2="130" stroke="#c8a971" stroke-width="1.2" opacity="0.6"/>
-                                <line x1="70" y1="135" x2="110" y2="135" stroke="#c8a971" stroke-width="2" opacity="0.4"/>
-                                <line x1="210" y1="135" x2="250" y2="135" stroke="#c8a971" stroke-width="2" opacity="0.4"/>
-                                <rect x="120" y="105" width="80" height="25" fill="#c8a971" opacity="0.08"/>
-                                <circle cx="160" cy="90" r="4" fill="#c8a971" opacity="0.6"/>
-                                <circle cx="110" cy="108" r="3" fill="#c8a971" opacity="0.4"/>
-                                <circle cx="210" cy="108" r="3" fill="#c8a971" opacity="0.4"/>
-                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">THEATER · WAITING SPACE</text>
+                                <!-- Top-down theater floor plan: entry → waiting → auditorium -->
+                                <!-- ENTRY / FOYER (bottom zone) -->
+                                <rect x="105" y="120" width="110" height="28" rx="2" fill="#c8a971" opacity="0.08" stroke="#c8a971" stroke-width="0.8" opacity2="0.4"/>
+                                <rect x="105" y="120" width="110" height="28" rx="2" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.3"/>
+                                <!-- Entry door gap -->
+                                <rect x="148" y="146" width="24" height="4" fill="#1a1f36"/>
+                                <line x1="148" y1="148" x2="140" y2="148" stroke="#c8a971" stroke-width="0.6" opacity="0.4"/>
+                                <line x1="172" y1="148" x2="180" y2="148" stroke="#c8a971" stroke-width="0.6" opacity="0.4"/>
+                                <!-- WAITING ZONE (middle, wider) -->
+                                <rect x="82" y="72" width="156" height="44" rx="2" fill="#c8a971" opacity="0.1" stroke="#c8a971" stroke-width="1" opacity2="0.5"/>
+                                <rect x="82" y="72" width="156" height="44" rx="2" fill="none" stroke="#c8a971" stroke-width="1" opacity="0.4"/>
+                                <!-- Waiting zone furniture: benches (small rects) -->
+                                <rect x="100" y="82" width="30" height="8" rx="1" fill="#c8a971" opacity="0.2"/>
+                                <rect x="140" y="82" width="30" height="8" rx="1" fill="#c8a971" opacity="0.15"/>
+                                <rect x="190" y="82" width="30" height="8" rx="1" fill="#c8a971" opacity="0.2"/>
+                                <rect x="110" y="97" width="20" height="8" rx="1" fill="#c8a971" opacity="0.12"/>
+                                <rect x="190" y="97" width="20" height="8" rx="1" fill="#c8a971" opacity="0.12"/>
+                                <!-- People waiting (small dots) -->
+                                <circle cx="115" cy="86" r="2.5" fill="#c8a971" opacity="0.55"/>
+                                <circle cx="155" cy="86" r="2.5" fill="#c8a971" opacity="0.55"/>
+                                <circle cx="205" cy="86" r="2.5" fill="#c8a971" opacity="0.55"/>
+                                <!-- AUDITORIUM (top zone) -->
+                                <rect x="95" y="22" width="130" height="46" rx="2" fill="none" stroke="#c8a971" stroke-width="0.8" opacity="0.35"/>
+                                <!-- Seat rows (dots in grid) -->
+                                <g fill="#c8a971" opacity="0.3">
+                                    <circle cx="115" cy="33" r="2.5"/><circle cx="128" cy="33" r="2.5"/><circle cx="141" cy="33" r="2.5"/>
+                                    <circle cx="154" cy="33" r="2.5"/><circle cx="167" cy="33" r="2.5"/><circle cx="180" cy="33" r="2.5"/>
+                                    <circle cx="193" cy="33" r="2.5"/><circle cx="206" cy="33" r="2.5"/>
+                                    <circle cx="115" cy="44" r="2.5"/><circle cx="128" cy="44" r="2.5"/><circle cx="141" cy="44" r="2.5"/>
+                                    <circle cx="154" cy="44" r="2.5"/><circle cx="167" cy="44" r="2.5"/><circle cx="180" cy="44" r="2.5"/>
+                                    <circle cx="193" cy="44" r="2.5"/><circle cx="206" cy="44" r="2.5"/>
+                                    <circle cx="122" cy="55" r="2.5"/><circle cx="135" cy="55" r="2.5"/><circle cx="148" cy="55" r="2.5"/>
+                                    <circle cx="161" cy="55" r="2.5"/><circle cx="174" cy="55" r="2.5"/><circle cx="187" cy="55" r="2.5"/>
+                                    <circle cx="200" cy="55" r="2.5"/>
+                                </g>
+                                <!-- Stage front line -->
+                                <line x1="95" y1="68" x2="225" y2="68" stroke="#c8a971" stroke-width="1.2" opacity="0.5"/>
+                                <!-- Zone labels -->
+                                <text x="160" y="158" text-anchor="middle" font-family="serif" font-size="8" fill="#c8a971" opacity="0.45" letter-spacing="2">WAITING SPACE · SMALL THEATER · IMMERSION</text>
                             </svg>
                         </div>
                         <div class="student-info">
-                            <h5 class="student-name">Seok Ji Weon</h5>
+                            <h5 class="student-name">Ji Weon Seok</h5>
                             <p class="student-research-label">Research Topic</p>
                             <p class="student-research-topic">A Study on Design Guidelines for Audience Immersion Experience through the Typification of Waiting Spaces in Small Theaters: Focusing on Cases in Seoul</p>
                         </div>
